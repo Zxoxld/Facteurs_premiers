@@ -1,0 +1,23 @@
+def saiasirN():
+    n= int(input("Doner N : "))
+    while not(2<n<1000):
+        n = int(input("Doner N (2<N<1000) : "))
+    return n
+
+
+def factpr(n):
+    i=2
+    nb=0
+    ch=""
+    while(n!=1):
+        if(n%i==0):
+            n=n//i
+            ch=ch+str(i)+" "
+            nb+=1
+        else:
+            i+=1
+    return ch
+
+
+n=saiasirN()
+print(factpr(n))
